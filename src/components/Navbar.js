@@ -38,7 +38,7 @@ function Navbar() {
                     <img src={SAMSUNG_LOGO} alt="삼성로고" />
                 </Link>
                 <div className="menu-icon" onClick={clickHandler}>
-                    <i className={click ? "fas fa-times" : "fas fa-bars"} />
+                    {/* <i className={click ? "fas fa-times" : "fas fa-bars"} /> */}
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className="nav-item">

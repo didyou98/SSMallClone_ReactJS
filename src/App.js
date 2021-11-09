@@ -3,13 +3,15 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
 import Slide from './components/Slide';
-import TransformEffect from './components/TransformEffect';
+import ContentSection from './components/ContentSection'
+
+
 function App() {
   return (
     <Router>
       <Navbar />
-      
-      <Slide drowdown = {Navbar.dropdown}/>
+      <Slide />
+      <ContentSection />
     </Router>
       
   );
