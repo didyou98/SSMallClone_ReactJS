@@ -7,6 +7,10 @@ import PersonImg from '../img/person.svg'
 import SearchImg from '../img/search.svg'
 import Dropdown from './Dropdown';
 import TransformEffect from './TransformEffect';
+import arrowBlack from '../img/arrow-black.svg';
+import arrowWhite from '../img/arrow-white.svg';
+import locationBlack from '../img/location-black.svg';
+import locationWhite from '../img/location-white.svg';
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -29,7 +33,6 @@ function Navbar() {
             setDropdown(false);
         }
     }; 
-
     <TransformEffect dropdown={dropdown}/>
     return (
         <>
@@ -68,12 +71,12 @@ function Navbar() {
                     </li>
                     <li className="nav-item">
                         <Link to='/' className="nav-links">
-                        디지털프라자
+                            디지털프라자 <img className="icon-arrow" />
                         </Link>
                     </li>
                     <li className="nav-item">
                         <Link to='/' className="nav-links">
-                        사회공헌
+                            사회공헌
                         </Link>
                     </li>
                     <li className="nav-item">

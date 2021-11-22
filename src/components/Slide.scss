@@ -1,0 +1,87 @@
+$total: 5;
+$total-extra: $total + 1;
+
+.scene {
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    width: 100%;
+}
+
+.slideItem {
+    width: 100%;
+    position: relative;
+}
+
+.next {
+    position: absolute;
+    font-size: 24px;
+    top: 50%;
+    right: 32px;
+    color: #ffffff;
+    z-index: 1;
+    cursor: pointer;
+    user-select: none;
+}
+
+.prev {
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    color: #ffffff;
+    z-index: 1;
+    cursor: pointer;
+    user-select: none;
+}
+
+.inner-contents {
+    position: absolute;
+    text-align: center;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box-title h1{
+    font-family: 'Samsung Sharp Sans';
+    font-size: 2.7vw;
+    font-weight: bold;
+    color: white;
+    letter-spacing: -0.02em;
+}
+
+.box-title p {
+    letter-spacing: -.03em;
+    font-size: 0.938vw;
+    
+    color: white;
+    margin-top: 0.7vw;
+}
+.box-btns {
+    margin-top: 0.7vw;
+    border: 0;
+    outline: 0;
+    font-size: 0.729vw;
+}
+.box-btns .btn-underline {
+    color: white;
+    background-color: transparent;
+    line-height: 1.42;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #fff;
+    margin-right: 15px;
+}
+
+.box-btns .btn-round {
+    color: #000;
+    border-color: transparent;
+    background-color: #fff;
+    line-height: 1.42;
+    border-radius: 1.042vw;
+    padding: 12px;
+    font-weight: bold;
+}

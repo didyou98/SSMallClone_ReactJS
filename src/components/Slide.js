@@ -1,61 +1,47 @@
 import React, {useState, useEffect, useRef} from 'react'
-import './Slide.css';
+import './Slide.scss';
 import {FaAngleLeft, FaAngleRight} from 'react-icons/fa'
 import {SlideItems} from './SlideItems';
 
 
 function Slide(props) {
-
-    const delay = 10000;
-    const [index, setIndex] = useState(0);
-    const timeoutRef = useRef(null);
-
-    function resetTimeout()
-    {
-        if(timeoutRef){
-            clearTimeout(timeoutRef.current)
-        }
-    }
-
-    const nextSlide = () => {
-        setIndex(index === SlideItems.length - 1 ? 0 : index + 1);
-    }
-
-    const prevSlide = () => {
-        setIndex(index === 0 ? SlideItems.length - 1 : index - 1);
-    }
-
-
-    useEffect(() => {
-        resetTimeout();
-        timeoutRef.current = setTimeout(
-          () =>
-            setIndex((prevIndex) =>
-              prevIndex >= SlideItems.length - 1 ? 0 : prevIndex + 1
-            ),
-          delay
-        );
-    
-        return () => {};
-      }, [index]);
+    const slideLen = SlideItems.length;
+    console.log(slideLen);
 
     return (
-        <div className="slideshow" >
-            <FaAngleLeft className="left-arrow" onClick={prevSlide} size={48}/>
-            <FaAngleRight className="right-arrow" onClick={nextSlide} size={48}/>
-            <div className="slideshowSlider" style={
-                {transform: `translate3d(${(-index) *  100 }%, 0, 0)`}
-                }>
-                
-                {
-                    SlideItems.map((item, index) => {
-                        return (
-                            <div className="slide" key={index}>
-                                <img src={item.image} alt="banner image" />
-                            </div>
-                        )
-                    })
-                }
+        <div className="scene" >
+            <div className="slider">
+                <span className="prev">&lang;</span>
+                <span className="next">&rang;</span>
+                <div className="slideItem">
+                    <img src={SlideItems[0].image} alt="" />
+                    <div className="inner-contents">
+                        <div className="box-title">
+                            <h1>삼성 TV 위크</h1>
+                            <p>삼성의 발자취와 함께 올해 가장 사랑받은<br/>
+                            TV 제품들을 특별한 공동구매로 만나보세요</p>
+                        </div>
+                        <div className="box-btns">
+                            <button className="btn-underline">구매 혜택 보기</button>
+                            <button className="btn-round">공동 구매하기</button>
+                        </div>
+                    </div>
+                </div>
+                <div className="slideItem">
+                    <img src={SlideItems[1].image} alt="" />
+                </div>
+                <div className="slideItem">
+                    <img src={SlideItems[2].image} alt="" />
+                </div>
+                <div className="slideItem">
+                    <img src={SlideItems[3].image} alt="" />
+                </div>
+                <div className="slideItem">
+                    <img src={SlideItems[4].image} alt="" />
+                </div>
+                <div className="slideItem">
+                    <img src={SlideItems[0].image} alt="" />
+                </div>
             </div>
         </div>
     )
