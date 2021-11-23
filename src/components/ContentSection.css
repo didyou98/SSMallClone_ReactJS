@@ -130,3 +130,223 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.contents-section-box2-container {
+    position: relative;
+    padding-top:40px;
+}
+
+.cotent-section-box2-main-title {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    z-index: 1;
+    
+}
+
+.cotent-section-box2-main-title h2 {
+    font-size: 28px;
+    font-weight: bold;
+    
+}
+
+.content-section-box2-tabs {
+    position: absolute;
+    display: flex;
+    padding: 0 24px 36px 24px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: inherit;
+}
+
+.cotent-section-box2-title {
+    font-size: 20px;
+    padding: 0 10px;
+    color: inherit;
+}
+
+.cotent-section-box2-title button {
+     /*<버튼디자인제거>*/
+     outline: 0;
+     border: 0;
+     background: transparent;
+     /*</버튼디자인제거>*/
+     padding: 0 1px 2px 1px;
+     font-weight: bold;
+     font-size: 18px;
+     color: inherit;
+}
+
+.contents-section-box-slider{
+    width: 100%;
+    
+}
+
+.contents-section-box2-bg {
+    overflow: hidden;
+    justify-content: center;
+}
+
+.contents-section-box2-items {
+    display: flex;
+    transition: 0.5s;
+    
+}
+
+.contents-section-box2-item {
+    flex: 0 0 100%;
+    position: relative;
+    color: inherit;
+    
+}
+
+.contents-section-box2-item-text {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: inherit;
+    margin: 30px 0px;
+}
+.texts {
+    color: white;
+}
+
+.contents-section-box2-item-text h1 {
+    font-weight: bold;
+    color: inherit;
+
+}
+
+.contents-section-box2-item-text p {
+    margin: 25px 0px;
+    font-size: 20px;
+    color: inherit;
+    letter-spacing: -0.02em;
+}
+
+.btn {
+
+    outline: 0;
+    border: 0;
+    background: transparent;
+    /*</버튼디자인제거>*/
+    padding: 0 24px;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    background-color: #000;
+    border-radius: 20px;
+    line-height: 38px;
+    letter-spacing: -0.5px;
+}
+
+.contents-section-box2-item-text button {
+    /*<버튼디자인제거>*/
+    outline: 0;
+    border: 0;
+    background: transparent;
+    /*</버튼디자인제거>*/
+    padding: 0 24px;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    background-color: #000;
+    border-radius: 20px;
+    line-height: 38px;
+    letter-spacing: -0.5px;
+}
+
+/*---------------------box3-------------------------------- */
+
+
+.contents-section-box3-container {
+    position: relative;
+}
+
+.cotent-section-box3-main-title {
+    position: absolute;
+    top: 5%;
+    left: 45%;
+    z-index: 1;
+    
+}
+
+.cotent-section-box3-main-title h2 {
+    font-size: 28px;
+    font-weight: bold;
+    
+}
+
+.content-section-box3-tabs {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    padding: 0 24px 36px 24px;
+    justify-content: center;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: inherit;
+}
+
+.cotent-section-box3-title {
+    
+    font-size: 20px;
+    padding: 0 10px;
+    color: inherit;
+}
+
+.cotent-section-box3-title button {
+     /*<버튼디자인제거>*/
+     outline: 0;
+     border: 0;
+     background: transparent;
+     /*</버튼디자인제거>*/
+     padding: 0 1px 2px 1px;
+     font-weight: bold;
+     font-size: 18px;
+     color: inherit;
+}
+
+.contents-section-box3-bg {
+    overflow: hidden;
+    justify-content: center;
+}
+
+.contents-section-box3-items {
+    display: flex;
+    transition: 0.5s;
+    
+}
+
+.contents-section-box3-item {
+    flex: 0 0 100%;
+    position: relative;
+    color: inherit;
+    
+}
+
+.contents-section-box3-item-text {
+    margin-top: 10px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: inherit;
+}
+
+.contents-section-box3-item-text h1 {
+    font-weight: bold;
+    color: inherit;
+}
+
+.contents-section-box3-item-text p {
+    font-size: 20px;
+    color: inherit;
+    letter-spacing: -0.02em;
+}
+

@@ -17,6 +17,8 @@ function Navbar() {
     const clickHandler = () => setClick(!click);
 
     const [dropdown, setDropdown] = useState(false);
+    const [icon, setIcon] = useState([false, false, false]);
+    const newArr = [...icon];
 
     const onMouseEnter = () => {
         if(window.innerWidth < 960) {
@@ -33,6 +35,17 @@ function Navbar() {
             setDropdown(false);
         }
     }; 
+
+    const onIconHover = (index) => {
+        newArr[index] = true;
+        setIcon(newArr);
+    }
+
+    const onIconLeave = (index) => {
+        newArr[index] = false;
+        setIcon(newArr);
+    }
+
     <TransformEffect dropdown={dropdown}/>
     return (
         <>
@@ -65,23 +78,23 @@ function Navbar() {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to='/' className="nav-links">
+                        <Link to='/' className="nav-links" >
                             멤버십
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to='/' className="nav-links">
-                            디지털프라자 <img className="icon-arrow" />
+                        <Link to='/' className="nav-links" onMouseOver={()=> {onIconHover(0)}} onMouseLeave={()=> {onIconLeave(0)}}>
+                            디지털프라자 {icon[0] ? <img src={arrowWhite} /> : <img src={arrowBlack} />}
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to='/' className="nav-links">
-                            사회공헌
+                        <Link to='/' className="nav-links" onMouseOver={()=> {onIconHover(1)}} onMouseLeave={()=> {onIconLeave(1)}}>
+                            사회공헌 {icon[1] ? <img src={arrowWhite} /> : <img src={arrowBlack} />}
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to='/' className="nav-links">
-                            비즈니스
+                        <Link to='/' className="nav-links" onMouseOver={()=> {onIconHover(2)}} onMouseLeave={()=> {onIconLeave(2)}}>
+                            비즈니스 {icon[2] ? <img src={locationWhite} /> : <img src={locationBlack} />}
                         </Link>
                     </li>
                 </ul>
