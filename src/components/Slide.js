@@ -1,6 +1,5 @@
 import React, {useState, useEffect, useRef} from 'react'
 import './Slide.scss';
-import {FaAngleLeft, FaAngleRight} from 'react-icons/fa'
 import {SlideItems} from './SlideItems';
 
 

@@ -107,7 +107,7 @@ function Navbar() {
                         </li>
                         <li className="nav-item-icon" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
                             <Link>
-                            <img src={PersonImg} /> 
+                            <img src={PersonImg} style={{transition: "ease .5s"}}/> 
                             {dropdown && <Dropdown/>}
                             </Link>
                         </li>
