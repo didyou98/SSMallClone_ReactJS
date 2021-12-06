@@ -350,3 +350,69 @@
     letter-spacing: -0.02em;
 }
 
+.content-section-box4-container {
+    padding: 50px 0px;
+}
+
+.content-section-box4-items {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+.content-section-box4-head {
+    text-align: left;
+    padding: 16px;
+}
+.content-section-box4-head h1 {
+    font-size: 50px;
+}
+
+.content-section-box4-head p{
+    font-size: 16px;
+}
+
+.content-section-box4-slide {
+    overflow: hidden;
+    width: 684px;
+}
+.content-section-box4-slider {
+    display: flex;
+    transition: all 0.5s ease-in-out;
+    
+}
+.content-section-box4-slider-item{
+    flex: 0 0 100%;
+}
+.content-section-box4-titles {
+    font-weight: bold;
+    padding: 16px;
+    text-align: left;
+}
+
+.content-section-box4-title {
+    position: relative;
+    padding: 16px;
+    margin: 16px;
+}
+.content-section-box4-title .span-text {
+
+}
+.content-section-box4-title .span-num {
+    padding: 16px;
+}
+
+.content-section-box4-title .deco-line {
+    position: absolute;
+    top: -10px;
+    width: 448px;
+    border-top: 1px solid gray;
+}
+
+.content-section-box4-title .div-link {
+    padding: 0px 0px 0px 50px;
+    cursor: pointer;
+    text-decoration: underline;
+}

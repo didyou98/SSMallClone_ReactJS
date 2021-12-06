@@ -44,6 +44,10 @@ import section4Img3 from '../img/section4Img3.jpg';
 import section4Img4 from '../img/section4Img4.jpg';
 import section4Img5 from '../img/section4Img5.jpg';
 import section4Img6 from '../img/section4Img6.jpg';
+import sectionbox4item1 from '../img/section-box4-item1.jpg';
+import sectionbox4item2 from '../img/section-box4-item2.jpg';
+import sectionbox4item3 from '../img/section-box4-item3.jpg';
+import sectionbox4item4 from '../img/section-box4-item4.jpg';
 
 
 
@@ -95,7 +99,20 @@ function ContentSection() {
         setSectionTab4(index);
     }
 
-
+    const [story, setStroy] = useState([true, false, false, false]);
+    const [storyTab, setStroyTab] = useState(0);
+    const newStroy = [...story]
+    const onStroyEnter = (index) => {
+        newStroy[index] = true;
+        setStroy(newStroy);
+    }
+    const onStroyLeave = (index) => {
+        newStroy[index] = false;
+        setStroy(newStroy);
+    }
+    const onStoryTab = (index) => {
+        setStroyTab(index);
+    }
 
     return (
         <>
@@ -468,10 +485,67 @@ function ContentSection() {
                             </div>
                         </div>
                     </div>
+                    <div className="content-section-box4-container">
+                        <div className="content-section-box4-items">
+                            <div className="content-section-box4-head">
+                                <h1>스토리</h1>
+                                <p>당신의 삶을 특별하게 해줄 새로운 아이디어 <br/>스마트하게 사는 새로운 방법을 알아보세요.</p>
+                            </div>
+
+                            <div className="content-section-box4-slide">
+                                <div className="content-section-box4-slider" style={{transform:`translateX(-${storyTab}00%`}}>
+                                    <div className="content-section-box4-slider-item">
+                                        <img src={sectionbox4item1} alt="" />
+                                    </div>
+                                    <div className="content-section-box4-slider-item">
+                                        <img src={sectionbox4item2} alt="" />
+                                    </div>
+                                    <div className="content-section-box4-slider-item">
+                                        <img src={sectionbox4item3} alt="" />
+                                    </div>
+                                    <div className="content-section-box4-slider-item">
+                                        <img src={sectionbox4item4} alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="content-section-box4-titles">
+                                <div className="content-section-box4-title" onMouseLeave={() => {onStroyLeave(0)}} onMouseEnter={() => {onStroyEnter(0); onStoryTab(0)}}>
+                                    <div className="deco-line"></div>
+                                    <span className="span-num">01</span><span className="span-text">삼성 갤럭시와 메종 키츠네 여우의 만남</span>
+                                    {console.log(story[0])}
+                                    {story[0] ? <More /> : null}
+                                </div>
+                                <div className="content-section-box4-title" onMouseLeave={() => {onStroyLeave(1)}} onMouseEnter={() => {onStroyEnter(1); onStoryTab(1)}}>
+                                    <div className="deco-line"></div>
+                                    <span className="span-num">02</span><span className="span-text">#함께 만드는 더 나은 미래</span>
+                                    {story[1] ? <More /> : null}
+                                </div>
+                                <div className="content-section-box4-title" onMouseLeave={() => {onStroyLeave(2)}} onMouseEnter={() => {onStroyEnter(2); onStoryTab(2)}}>
+                                    <div className="deco-line"></div>
+                                    <span className="span-num">03</span><span className="span-text">#우리가 집에서 일하는 새로운 방법</span>
+                                    {story[2] ? <More /> : null}
+                                </div>
+                                <div className="content-section-box4-title" onMouseLeave={() => {onStroyLeave(3)}} onMouseEnter={() => {onStroyEnter(3); onStoryTab(3)}}>
+                                    <div className="deco-line"></div>
+                                    <span className="span-num">04</span><span className="span-text">#승리를 향한 완벽한 준비</span>
+                                    {story[3] ? <More /> : null}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
         
+    )
+}
+
+function More()
+{
+    return(
+        <>
+        <div className="div-link">더 알아보기</div>
+        </>
     )
 }
 
