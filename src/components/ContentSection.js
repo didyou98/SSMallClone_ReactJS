@@ -48,6 +48,12 @@ import sectionbox4item1 from '../img/section-box4-item1.jpg';
 import sectionbox4item2 from '../img/section-box4-item2.jpg';
 import sectionbox4item3 from '../img/section-box4-item3.jpg';
 import sectionbox4item4 from '../img/section-box4-item4.jpg';
+import sectionbox5item1 from '../img/section-box5-item1.jpg';
+import sectionbox5item2 from '../img/section-box5-item2.jpg';
+import sectionbox5item3 from '../img/section-box5-item3.jpg';
+import sectionbox5item4 from '../img/section-box5-item4.jpg';
+import sectionbox5item5 from '../img/section-box5-item5.jpg';
+import sectionbox5item6 from '../img/section-box5-item6.jpg';
 
 
 
@@ -533,8 +539,65 @@ function ContentSection() {
                             </div>
                         </div>
                     </div>
+                    <div className="contents-section-box5-container">
+                        <div className="contents-section-box5-sub-title">
+                            WHAT'S HAPPENING @SAMSUNG.COM
+                        </div>
+                        <div className="contents-section-box5-title">
+                            트렌디
+                        </div>
+                        <div className="contents-section-box5-items">
+                            <div className="contents-section-box5-item">
+                                <img src={sectionbox5item1} alt="" />
+                                <div className="contents-section-box5-item-detail">
+                                    <p className="detail-type">EXPERIENCE</p>
+                                    <p className="detail-title">갤럭시 스튜디오</p>
+                                    <p className="detail-src">갤럭시 Z 폴드3|플립3 부터 <br/>갤럭시 워치4, 버즈2까지 <br/>새로운 갤럭시의 놀라운 기능을 마음껏 체험해 보세요</p>
+                                </div>
+                            </div>
+                            <div className="contents-section-box5-item">
+                                <img src={sectionbox5item2} alt="" />
+                                <div className="contents-section-box5-item-detail">
+                                    <p className="detail-type">VIDEO</p>
+                                    <p className="detail-title">한눈에 보는 제품 영상</p>
+                                    <p className="detail-src">어떤 영상을 찾으세요? 다양한 영상을 한눈에 보고 마음에 드는<br/>제품을 골라보세요</p>
+                                </div>
+                            </div>
+                            <div className="contents-section-box5-item">
+                                <img src={sectionbox5item3} alt="" />
+                                <div className="contents-section-box5-item-detail">
+                                    <p className="detail-type">EVENT</p>
+                                    <p className="detail-title">팀 삼성 룩북 : BEHINE THE SCENE</p>
+                                    <p className="detail-src">집 안에서 경험하는 놀랍도록 편리한 모든 순간을 팀 삼성 룩북으로<br/>만나보세요.</p>
+                                </div>
+                            </div>
+                            <div className="contents-section-box5-item">
+                                <img src={sectionbox5item4} alt="" />
+                                <div className="contents-section-box5-item-detail">
+                                    <p className="detail-type">EXPERIENCE</p>
+                                    <p className="detail-title">디지털프라자 VR 스토어</p>
+                                    <p className="detail-src">언제 어디서나 3D VR 스토어에서 제품 정보부터 상담까지 편하게 <br/>체험해보세요</p>
+                                </div>
+                            </div>
+                            <div className="contents-section-box5-item">
+                                <img src={sectionbox5item5} alt="" />
+                                <div className="contents-section-box5-item-detail">
+                                    <p className="detail-type">VIDEO</p>
+                                    <p className="detail-title">갤럭시 리얼 마케팅쇼</p>
+                                    <p className="detail-src">갤럭시 Z 폴드3|플립3를 위해 찐팬들이 뭉쳤다! <br/>미션을 수행해 나가는 최정예 프로덕션 Z의 활약을 만나보세요</p>
+                                </div>
+                            </div>
+                            <div className="contents-section-box5-item">
+                                <img src={sectionbox5item6} alt="" />
+                                <div className="contents-section-box5-item-detail">
+                                    <p className="detail-type">SUPPORT</p>
+                                    <p className="detail-title">매장 상담 예약</p>
+                                    <p className="detail-src">맞춤 상담을 예약하고 삼성전자가 제안하는 라이프스타일을 직접 체험해보세요.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                hi
             </div>
         </>
         
