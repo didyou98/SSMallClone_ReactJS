@@ -5,8 +5,6 @@ import {SlideItems} from './SlideItems';
 
 function Slide(props) {
     const slideLen = SlideItems.length;
-    console.log(slideLen);
-
     return (
         <div className="scene" >
             <div className="slider">

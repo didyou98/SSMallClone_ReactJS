@@ -457,5 +457,34 @@
     margin-top: 16px;
     font-size: 15px;
     line-height: 24px;
-    color: #707070;
+    color: #702d2d;
+}
+
+.btn {
+    position: fixed;
+    margin-bottom: 10px;
+}
+
+.btn:hover{
+    width: 100%;
+    color: black;
+    background: #fff;
+    transition: .5s;
+}
+
+a{
+    text-decoration: none;
+}
+
+.scrollToTop
+{
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    right: 45px;
+    bottom: 15px;
+    border-radius: 15px;
+    background-color: rgb(83, 147, 219);
+    border: 0;
+    color: white;
 }

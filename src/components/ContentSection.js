@@ -120,6 +120,10 @@ function ContentSection() {
         setStroyTab(index);
     }
 
+    const scrollToTop = () =>{
+        window.scrollTo(0, 0);
+    }
+
     return (
         <>
             <div className="content-container">
@@ -598,6 +602,8 @@ function ContentSection() {
                         </div>
                     </div>
                 </div>
+                <button className='scrollToTop' onClick={scrollToTop}>TOP</button>
+                
             </div>
         </>
         

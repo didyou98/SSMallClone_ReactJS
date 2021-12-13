@@ -1,0 +1,47 @@
+.wrapper{
+    overflow: hidden;
+    min-height: 4000px;
+}
+
+.title {
+
+    width: 60%;
+    margin: 0 auto;
+    letter-spacing: -0.09em;
+}
+
+.title h2 {
+    font-size: 22px;
+    letter-spacing: -0.09em;
+}
+
+.title-main {
+    font-size: 120px;
+    font-weight: bold;
+}
+
+.title img
+{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.parallax {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.test-black {
+    display: inline-block;
+    width: 100%;
+    
+    height: 290px;
+    text-align: center;
+    background-color: #000;
+}
+
+.test-black img {
+    align-items: center;
+    justify-content: center;
+}
