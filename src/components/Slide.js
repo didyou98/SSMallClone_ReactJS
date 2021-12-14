@@ -3,13 +3,35 @@ import './Slide.scss';
 import {SlideItems} from './SlideItems';
 
 
-function Slide(props) {
+function Slide() {
+    const [slide, setSlide] = useState(0);
+    const onNextSlide = () => {
+        if(slide < 4)
+        {
+            setSlide(slide + 1);
+        }
+        else
+        {
+            setSlide(0);
+        }
+    }
+
+    const onPrevSlide = () => {
+        if(slide <= 0)
+        {
+            setSlide(slide + 4); 
+        }
+        else
+        {
+            setSlide(slide - 1);
+        }
+    }
     const slideLen = SlideItems.length;
     return (
         <div className="scene" >
-            <div className="slider">
-                <span className="prev">&lang;</span>
-                <span className="next">&rang;</span>
+            <span className="prev" onClick={onPrevSlide}>&lang;</span>
+            <span className="next" onClick={onNextSlide}>&rang;</span>
+            <div className="slider" style={{transform: `translate(-${slide}00%)`}}>
                 <div className="slideItem">
                     <img src={SlideItems[0].image} alt="" />
                     <div className="inner-contents">
@@ -35,9 +57,6 @@ function Slide(props) {
                 </div>
                 <div className="slideItem">
                     <img src={SlideItems[4].image} alt="" />
-                </div>
-                <div className="slideItem">
-                    <img src={SlideItems[0].image} alt="" />
                 </div>
             </div>
         </div>
