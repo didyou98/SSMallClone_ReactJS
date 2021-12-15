@@ -355,7 +355,7 @@ function ContentSection() {
                                             <h1>Galaxy Z FOLD3 5G</h1>
                                             <p>갤럭시 Z 폴드3도 함께 사면 더 커지는<br /> 갤럭시 아카데미 혜택으로 만나보세요</p>
                                             <p></p>
-                                            <button style={underLineBlack} className="btn">더 알아보기</button>
+                                            <button style={underLineBlack} className='btn'>더 알아보기</button>
                                             <button className="btn">구매 혜택보기</button>
                                         </div>
                                     </div>

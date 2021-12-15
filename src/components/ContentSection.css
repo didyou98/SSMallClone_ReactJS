@@ -312,6 +312,15 @@
      color: inherit;
 }
 
+.underline-btn-white {
+    margin-right: 5px;
+    padding:0px 5px;
+    border-radius: "0px";
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    line-height:20px
+}
+
 .contents-section-box3-bg {
     overflow: hidden;
     justify-content: center;
@@ -460,17 +469,6 @@
     color: #702d2d;
 }
 
-.btn {
-    position: fixed;
-    margin-bottom: 10px;
-}
-
-.btn:hover{
-    width: 100%;
-    color: black;
-    background: #fff;
-    transition: .5s;
-}
 
 a{
     text-decoration: none;
