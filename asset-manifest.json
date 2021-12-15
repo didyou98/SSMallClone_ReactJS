@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/SSMallClone_ReactJS/static/css/main.84367b09.chunk.css",
+    "main.css": "/SSMallClone_ReactJS/static/css/main.4f35a16d.chunk.css",
     "main.js": "/SSMallClone_ReactJS/static/js/main.d8611dfc.chunk.js",
     "main.js.map": "/SSMallClone_ReactJS/static/js/main.d8611dfc.chunk.js.map",
     "runtime-main.js": "/SSMallClone_ReactJS/static/js/runtime-main.96060d65.js",
@@ -8,7 +8,7 @@
     "static/js/2.14917d75.chunk.js": "/SSMallClone_ReactJS/static/js/2.14917d75.chunk.js",
     "static/js/2.14917d75.chunk.js.map": "/SSMallClone_ReactJS/static/js/2.14917d75.chunk.js.map",
     "index.html": "/SSMallClone_ReactJS/index.html",
-    "static/css/main.84367b09.chunk.css.map": "/SSMallClone_ReactJS/static/css/main.84367b09.chunk.css.map",
+    "static/css/main.4f35a16d.chunk.css.map": "/SSMallClone_ReactJS/static/css/main.4f35a16d.chunk.css.map",
     "static/js/2.14917d75.chunk.js.LICENSE.txt": "/SSMallClone_ReactJS/static/js/2.14917d75.chunk.js.LICENSE.txt",
     "static/media/arrow-black.484ef7b1.svg": "/SSMallClone_ReactJS/static/media/arrow-black.484ef7b1.svg",
     "static/media/arrow-white.ee03d2c5.svg": "/SSMallClone_ReactJS/static/media/arrow-white.ee03d2c5.svg",
@@ -65,7 +65,7 @@
   "entrypoints": [
     "static/js/runtime-main.96060d65.js",
     "static/js/2.14917d75.chunk.js",
-    "static/css/main.84367b09.chunk.css",
+    "static/css/main.4f35a16d.chunk.css",
     "static/js/main.d8611dfc.chunk.js"
   ]
 }
